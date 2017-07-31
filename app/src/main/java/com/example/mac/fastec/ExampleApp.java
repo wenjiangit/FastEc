@@ -2,7 +2,8 @@ package com.example.mac.fastec;
 
 import android.app.Application;
 
-import com.example.latte_core.app.Latte;
+import com.example.core.app.Latte;
+import com.joanzapata.android.iconify.fonts.FontAwesomeModule;
 
 /**
  *
@@ -15,6 +16,7 @@ public class ExampleApp extends Application {
         super.onCreate();
         Latte.init(this)
                 .withApiHost("http://localhost:8080")
+                .withIcon(new FontAwesomeModule())
                 .configure();
     }
 }
